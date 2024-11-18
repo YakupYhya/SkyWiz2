@@ -1,206 +1,147 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f9fafb;
-  }
-  
-  header {
-    background-color: #4CAF50;
-    padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  nav {
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-    border-radius: 4px;
-  }
-  
-  nav a:hover {
-    background-color: #3e8e41;
-  }
-  
-  main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
-    margin-bottom: 15px;
-    color: #4CAF50;
-  }
-  
-  p {
-    line-height: 1.6;
-  }
-  
-  .login-container {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    margin: 100px auto;
-    text-align: center;
-  }
-  
-  .login-container h2 {
-    color: #4CAF50;
-    margin-bottom: 20px;
-  }
-  
-  .login-container label {
-    display: block;
-    margin: 10px 0 5px;
-    text-align: left;
-  }
-  
-  .login-container input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 20px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #3e8e41;
-  }
-  
-  .error-message {
-    color: red;
-    margin-top: 15px;
-    font-size: 14px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #FFFCF2;
+  color: #333;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #FFD700; /* Sarı */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header h1 {
+  color: #3f21ff;
+  font-size: 26px;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav a {
+  color: #e0f6ff;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: #FF6F61;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #1E90FF;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.section {
+  margin-bottom: 40px;
+  background-color: #FFF;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  border-left: 8px solid #FF6F61;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+}
+
+.section h2 { 
+  color: #FF6F61;
+  margin-bottom: 15px;
+}
+
+.section p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #FF69B4;
+  color: #FFF;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #FF6F61;
+}
+
+/* Diğer CSS kodları burada */
+
+footer {
+  background-color: #FF6F61; /* Mavi */
+  color: #FFF;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 16px;
+  width: 100%;
+  position:relative;
+  bottom: 0;
+  left: 0;
+}
 
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f9fafb;
-  }
-  
-  header {
-    background-color: #4CAF50;
-    padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  nav {
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-    border-radius: 4px;
-  }
-  
-  nav a:hover {
-    background-color: #3e8e41;
-  }
-  
-  main {
-    padding: 30px 20px;
-    max-width: 1000px;
-    margin: 30px auto;
-  }
-  
-  .section {
-    margin-bottom: 40px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .section h2 {
-    color: #4CAF50;
-    margin-bottom: 15px;
-  }
-  
-  .section p {
-    line-height: 1.6;
-    margin-bottom: 10px;
-  }
-  
-  .section img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 15px;
-  }
-  
-  .cards-container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .card {
-    flex: 1 1 45%;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 10px 0;
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .card h3 {
-    color: #4CAF50;
-    margin-bottom: 10px;
-  }
-  
-  .card p {
-    line-height: 1.6;
-  }
-  
-  
+footer p {
+  margin: 10px 0;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  color: #FFF;
+  margin: 0 8px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+footer .social-icons a:hover {
+  color: #FFD700; /* Sarı */
+}
+
