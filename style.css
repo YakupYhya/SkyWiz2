@@ -145,3 +145,91 @@ footer .social-icons a:hover {
   color: #FFD700; /* Sarı */
 }
 
+header {
+  display: flex;
+  align-items: center; /* Elemanları dikeyde ortala */
+  justify-content: space-between; /* Elemanlar arasında boşluk bırak */
+  padding: 10px 20px;
+  background-color: #FFD700;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; /* Elemanlar taşarsa alt alta geçer */
+}
+
+header .logo {
+  width: 50px; /* Logo boyutunu küçült */
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header h1 {
+  color: #3f21ff;
+  font-size: 18px; /* Başlık boyutunu küçült */
+  margin: 0;
+  flex: 1; /* Logo ve başlık arasındaki denge */
+  text-align: left; /* Yazıyı sola hizala */
+}
+
+nav {
+  display: flex;
+  gap: 10px; /* Menü elemanları arasında boşluk bırak */
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #e0f6ff;
+  text-decoration: none;
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #FF6F61;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #1E90FF;
+}
+
+/* Küçük ekranlar için düzenleme */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Küçük ekranlarda elemanları alt alta diz */
+    align-items: center;
+  }
+
+  header h1 {
+    text-align: center; /* Yazıyı ortala */
+    margin: 10px 0;
+  }
+
+  nav {
+    flex-direction: column; /* Menü elemanlarını dikey sırala */
+    align-items: center;
+    gap: 5px; /* Menü elemanları arasında daha küçük boşluk */
+  }
+
+  nav a {
+    width: 90%; /* Menü elemanlarını tam genişlik yap */
+    text-align: center;
+  }
+}
+
+/* Çok küçük ekranlar için (mobil) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 16px; /* Başlık boyutunu küçült */
+  }
+
+  nav a {
+    padding: 5px 10px; /* Buton padding'ini küçült */
+    font-size: 12px; /* Yazı boyutunu küçült */
+  }
+}
