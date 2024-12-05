@@ -233,3 +233,9 @@ nav a:hover {
     font-size: 12px; /* Yazı boyutunu küçült */
   }
 }
+
+iframe {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+}

@@ -5,6 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AR Deneyimi</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Duyarlı iframe tasarımı */
+    .iframe-container {
+      position: relative;
+      width: 80%; /* Genişliği ayarlayın, %80 sağ ve soldan boşluk bırakır */
+      max-width: 800px; /* Maksimum genişlik */
+      margin: 0 auto; /* Ortalamak için margin */
+      padding-bottom: 56.25%; /* 16:9 oranı */
+      height: 0;
+      overflow: hidden;
+    }
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -22,19 +42,24 @@
   <main>
     <section class="section">
       <h2>AR Deneyimini Başlatın</h2>
-      <p>Artırılmış Gerçeklik (AR) deneyimi ile fosilleri üç boyutlu olarak incelemeye başlayabilirsiniz. Bunun için aşağıdaki butona tıklayarak AR deneyimini başlatın ve kitabın sunduğu bilgi dolu dünyaya adım atın!</p>
+      <p>Artırılmış Gerçeklik (AR) deneyimi ile fosilleri üç boyutlu olarak incelemeye başlayabilirsiniz. Bunun için aşağıdaki QR kod ve AR deneyimini başlatma bağlantısını kullanabilirsiniz!</p>
+      
+      <!-- QR Kod ve AR iframe -->
+      <div class="iframe-container">
+        <iframe src="https://create.overlyapp.com/webar/a4f3712185549f5b36e3ddcffe7a64ac50dce545?embed=true" allowfullscreen></iframe>
+      </div>
+
       <a href="https://example-ar-link.com" class="button">AR Deneyimini Başlat</a>
     </section>
   </main>
-</body>
 
-<footer  style="position: fixed; bottom: 0; width: 100%; "> 
-    <p>© 2024 Skywiz </p>
-    <div class="social-icons" >
+  <footer style="position: fixed; bottom: 0; width: 100%;"> 
+    <p>© 2024 Skywiz</p>
+    <div class="social-icons">
       <a href="https://www.facebook.com/skywiz" target="_blank">Facebook</a> |
       <a href="https://www.twitter.com/skywiz" target="_blank">Twitter</a> |
       <a href="https://www.instagram.com/skywiz" target="_blank">Instagram</a>
     </div>
   </footer>
-  
+</body>
 </html>
