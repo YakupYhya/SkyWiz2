@@ -6,24 +6,28 @@
 
 body {
   font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 16px; /* PC için varsayılan yazı boyutu */
   background-color: #FFFCF2;
   color: #333;
+  line-height: 1.6;
 }
 
 header {
   display: flex;
-  align-items: center;
-  padding: 15px;
-  background-color: #FFD700; /* Sarı */
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 10px 20px;
+  background-color: #FFD700;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; 
 }
 
 header .logo {
-  width: 60px;
-  height: 60px;
+  width: 50px; 
+  height: 50px;
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 header img {
@@ -34,21 +38,26 @@ header img {
 
 header h1 {
   color: #3f21ff;
-  font-size: 26px;
+  font-size: 18px; 
+  margin: 0;
+  flex: 1; 
+  text-align: left; 
 }
 
 nav {
-  margin-left: auto;
+  display: flex;
+  gap: 10px; 
+  flex-wrap: wrap;
 }
 
 nav a {
   color: #e0f6ff;
   text-decoration: none;
-  margin: 0 15px;
-  padding: 10px 20px;
+  padding: 5px 15px;
+  font-size: 14px;
   font-weight: bold;
   background-color: #FF6F61;
-  border-radius: 20px;
+  border-radius: 15px;
   transition: background-color 0.3s ease;
 }
 
@@ -83,9 +92,9 @@ main {
 }
 
 .section p {
+  font-size: 16px;
   line-height: 1.8;
   margin-bottom: 20px;
-  font-size: 18px;
 }
 
 .section img {
@@ -111,20 +120,17 @@ main {
   background-color: #FF6F61;
 }
 
-/* Diğer CSS kodları burada */
-
 footer {
-  background-color: #FF6F61; /* Mavi */
+  background-color: #FF6F61; 
   color: #FFF;
   text-align: center;
   padding: 10px 10px;
   font-size: 16px;
   width: 100%;
-  position:relative;
+  position: relative;
   bottom: 0;
   left: 0;
 }
-
 
 footer p {
   margin: 10px 0;
@@ -142,95 +148,69 @@ footer .social-icons a {
 }
 
 footer .social-icons a:hover {
-  color: #FFD700; /* Sarı */
+  color: #FFD700; 
 }
 
-header {
-  display: flex;
-  align-items: center; /* Elemanları dikeyde ortala */
-  justify-content: space-between; /* Elemanlar arasında boşluk bırak */
-  padding: 10px 20px;
-  background-color: #FFD700;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  flex-wrap: wrap; /* Elemanlar taşarsa alt alta geçer */
-}
-
-header .logo {
-  width: 50px; /* Logo boyutunu küçült */
-  height: 50px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-right: 10px;
-}
-
-header img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-header h1 {
-  color: #3f21ff;
-  font-size: 18px; /* Başlık boyutunu küçült */
-  margin: 0;
-  flex: 1; /* Logo ve başlık arasındaki denge */
-  text-align: left; /* Yazıyı sola hizala */
-}
-
-nav {
-  display: flex;
-  gap: 10px; /* Menü elemanları arasında boşluk bırak */
-  flex-wrap: wrap;
-}
-
-nav a {
-  color: #e0f6ff;
-  text-decoration: none;
-  padding: 5px 15px;
-  font-size: 14px;
-  font-weight: bold;
-  background-color: #FF6F61;
-  border-radius: 15px;
-  transition: background-color 0.3s ease;
-}
-
-nav a:hover {
-  background-color: #1E90FF;
-}
-
-/* Küçük ekranlar için düzenleme */
+/* Medya sorguları ile mobil uyumluluk */
 @media (max-width: 768px) {
+  body {
+    font-size: 16px; 
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+
   header {
-    flex-direction: column; /* Küçük ekranlarda elemanları alt alta diz */
+    flex-direction: column; 
     align-items: center;
   }
 
   header h1 {
-    text-align: center; /* Yazıyı ortala */
+    font-size: 20px; 
+    text-align: center; 
     margin: 10px 0;
   }
 
   nav {
-    flex-direction: column; /* Menü elemanlarını dikey sırala */
+    flex-direction: column; 
     align-items: center;
-    gap: 5px; /* Menü elemanları arasında daha küçük boşluk */
+    gap: 5px; 
   }
 
   nav a {
-    width: 90%; /* Menü elemanlarını tam genişlik yap */
+    width: 90%; 
     text-align: center;
+    font-size: 16px; 
+  }
+
+  .section p {
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 14px; 
   }
 }
 
 /* Çok küçük ekranlar için (mobil) */
 @media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
   header h1 {
-    font-size: 16px; /* Başlık boyutunu küçült */
+    font-size: 18px; 
   }
 
   nav a {
-    padding: 5px 10px; /* Buton padding'ini küçült */
-    font-size: 12px; /* Yazı boyutunu küçült */
+    padding: 5px 10px;
+    font-size: 14px; 
+  }
+
+  .section p {
+    font-size: 14px; 
+  }
+
+  footer {
+    font-size: 12px;
   }
 }
 
