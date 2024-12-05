@@ -5,11 +5,11 @@
 }
 
 body {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  font-size: 16px; /* PC için varsayılan yazı boyutu */
+  font-family: 'Comic Sans MS', cursive, sans-serif !important; /* Yazı tipini zorla */
+  font-size: 16px; /* PC ve mobil için tutarlı yazı boyutu */
+  line-height: 1.6;
   background-color: #FFFCF2;
   color: #333;
-  line-height: 1.6;
 }
 
 header {
@@ -92,7 +92,7 @@ main {
 }
 
 .section p {
-  font-size: 16px;
+  font-size: 16px !important; /* Mobil ve PC için aynı boyut */
   line-height: 1.8;
   margin-bottom: 20px;
 }
@@ -151,11 +151,11 @@ footer .social-icons a:hover {
   color: #FFD700; 
 }
 
-/* Medya sorguları ile mobil uyumluluk */
+/* Mobil cihazlar için medya sorgusu */
 @media (max-width: 768px) {
   body {
-    font-size: 16px; 
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif !important; /* Mobilde de zorla aynı yazı tipi */
+    font-size: 16px !important; /* Yazı boyutunu PC ile eşitle */
   }
 
   header {
@@ -182,7 +182,7 @@ footer .social-icons a:hover {
   }
 
   .section p {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 
   footer {
@@ -190,9 +190,10 @@ footer .social-icons a:hover {
   }
 }
 
-/* Çok küçük ekranlar için (mobil) */
+/* Çok küçük ekranlar için */
 @media (max-width: 480px) {
   body {
+    font-family: 'Comic Sans MS', cursive, sans-serif !important;
     font-size: 14px;
   }
 
