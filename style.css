@@ -154,7 +154,7 @@ footer .social-icons a:hover {
 /* Mobil cihazlar için medya sorgusu */
 @media (max-width: 768px) {
   body {
-    font-family: 'Comic Sans MS', cursive, sans-serif !important; /* Mobilde de zorla aynı yazı tipi */
+    font-family: 'Arial', cursive, sans-serif !important; /* Mobilde de zorla aynı yazı tipi */
     font-size: 16px !important; /* Yazı boyutunu PC ile eşitle */
   }
 
@@ -193,7 +193,7 @@ footer .social-icons a:hover {
 /* Çok küçük ekranlar için */
 @media (max-width: 480px) {
   body {
-    font-family: 'Comic Sans MS', cursive, sans-serif !important;
+    font-family: 'Arial', cursive, sans-serif !important;
     font-size: 14px;
   }
 
