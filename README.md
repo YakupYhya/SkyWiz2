@@ -1,4 +1,4 @@
-    # **Nerede Bu Kemik? - AR Deneyimi**
+# **Nerede Bu Kemik? - AR Deneyimi**
 
 **Nerede Bu Kemik?** projesine hoş geldiniz! Bu interaktif platform, **Artırılmış Gerçeklik (AR)** teknolojisini eğitici bir içerikle birleştirerek çocuklara eğlenceli ve öğretici bir deneyim sunmayı hedefliyor. Çocuklar, matematiksel düşünme ve yön bulma becerilerini geliştirirken hikâyenin dünyasında etkileşimde bulunabilirler.
 
