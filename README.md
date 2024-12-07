@@ -36,7 +36,7 @@ Proje süreçlerini Trello üzerinden takip etmek için:
 
 ---
 
-## **Web Sitesi**
+## **Detaylı Proje Dosyası**
 
 Proje dökümantasyonuna buradan erişebilirsiniz. [Drive](https://drive.google.com/drive/folders/1A_5K8lAQxA1she4kpBN77TBL0So6yXv2)
 
