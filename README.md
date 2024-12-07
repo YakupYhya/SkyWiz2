@@ -30,6 +30,12 @@ Proje süreçlerini Trello üzerinden takip etmek için:
 [Trello Proje Yönetim Tablosuna Göz Atın](https://trello.com/b/qojkksG9/skywiz-app)
 
 ---
+## **Web Sitesi**
+
+[Web sitemize buradan erişebilirsiniz.](https://yakupyhya.github.io/SkyWiz2/)
+
+---
+
 
 ## **Nasıl Çalışır?**
 
