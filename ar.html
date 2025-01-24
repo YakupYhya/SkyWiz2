@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=\device-width, initial-scale=1.0">
   <title>AR Deneyimi</title>
   <link rel="stylesheet" href="style.css">
 
@@ -10,9 +10,9 @@
     .iframe-container {
         position: relative;
         width: 100%;
-        max-width: 800px; /* Maksimum genişlik belirleyin */
-        margin: 0 auto; /* Ortalamak için otomatik margin */
-        padding-bottom: 56.25%; /* 16:9 oranı */
+        max-width: 800px;
+        margin: 0 auto;
+        padding-bottom: 56.25%;
         height: 0;
         overflow: hidden;
     }
@@ -24,7 +24,30 @@
         height: 100%;
         border: 0;
     }
-</style>
+    .download-links {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .download-links a {
+        display: inline-block;
+        margin: 10px;
+        text-decoration: none;
+    }
+    .download-links img {
+        width: 150px;
+        height: auto;
+    }
+    .video-container {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .video-container iframe {
+        width: 100%;
+        max-width: 800px;
+        height: 450px;
+        border: none;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -33,36 +56,58 @@
     </div>
     <h1>AR Deneyimi - Bingo Nerede?</h1>
     <nav>
-      
       <a href="index.html">Ana Sayfa</a>
       <a href="about.html">Kitap Hakkında</a>
       <a href="ar.html">AR Deneyimi</a>
       <a href="contact.html">İletişim</a>
-
     </nav>
   </header>
 
   <main>
     <section class="section">
       <h2>AR Deneyimini Başlatın</h2>
-      <p>Artırılmış Gerçeklik (AR) deneyimi ile Bingo'nun Kocapati'den saklandığı yerleri keşfetmeye hazır olun! Bunun için aşağıdaki QR kod ve AR deneyimini başlatma bağlantısını kullanabilirsiniz!</p>
-      
+      <p>Artırılmış Gerçeklik (AR) deneyimi ile Bingo'nun Kocapati'den saklandığı yerleri keşfetmeye hazır olun! Bunun için aşağıdaki AR deneyimini başlatma bağlantısını kullanabilirsiniz!</p>
+
       <!-- QR Kod ve AR iframe -->
       <div class="iframe-container">
-        <iframe width="560" height="315" src="https://create.overlyapp.com/webar/5e7b7430350ab437fdc1652a927ffd7f0253a9e7?embed=true"></iframe>
-        
+        <iframe src="https://create.overlyapp.com/webar/5e7b7430350ab437fdc1652a927ffd7f0253a9e7?embed=true"></iframe>
       </div>
       <div class="iframe-container">
-        <iframe width="560" height="315" src="https://create.overlyapp.com/webar/f73e2c3e14d32600fc39a21aed2487203529a90a?embed=true"></iframe>       
+        <iframe src="https://create.overlyapp.com/webar/f73e2c3e14d32600fc39a21aed2487203529a90a?embed=true"></iframe>
       </div>
-      
-      
 
       <a class="button">AR Deneyimini Başlatmak İçin View in Room Butonuna Basınız</a>
+
+      <h3>Daha İyi Bir AR Deneyimi İçin Overly Uygulamasını İndirin</h3>
+      <p>Overly uygulamasını indirerek artırılmış gerçeklik deneyimini daha keyifli hale getirebilirsiniz.</p>
+
+      <!-- İndirme Linkleri -->
+      <div class="download-links">
+        <a href="https://play.google.com/store/apps/details?id=com.Overly.Cloud&hl=tr&pli=1" target="_blank">
+          <img src="googleplay.png" alt="Google Play Store'dan İndir">
+        </a>
+        <a href="https://apps.apple.com/cy/app/overly/id917343353?l=tr" target="_blank">
+          <img src="appstore.png" alt="App Store'dan İndir">
+        </a>
+      </div>
+
+      <!-- YouTube Video -->
+      <div class="video-container">
+        <iframe 
+          width="100%" 
+          height="450" 
+          src="https://www.youtube.com/embed/3dG_J2bY-Hk?controls=1&showinfo=0&rel=0" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      
+
     </section>
   </main>
 
-  <footer style="position: fixed; bottom: 0; width: 100%;"> 
+  <footer style="position: fixed; bottom: 0; width: 100%;">
     <p>© 2024 Skywiz</p>
     <div class="social-icons">
       <a href="https://www.facebook.com" target="_blank">Facebook</a> |
