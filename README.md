@@ -35,6 +35,11 @@ Proje süreçlerini Trello üzerinden takip etmek için:
 [Web sitemize buradan erişebilirsiniz.](https://yakupyhya.github.io/SkyWiz2/)
 
 ---
+## **Tanıtım Videosu**
+
+[Videoya buradan erişebilirsiniz.](https://www.youtube.com/watch?v=BkbTmQgOLCY)
+
+---
 
 ## **Detaylı Proje Dosyası**
 
@@ -49,6 +54,8 @@ Proje dökümantasyonuna buradan erişebilirsiniz. [Drive](https://drive.google.
 1. **Web sitesine erişin ve hikâye hakkında bilgi edinin.**  
 2. **QR kodları tarayarak artırılmış gerçeklik deneyimine erişin.**  
 3. **Hikâyede yer alan 3D nesnelerle etkileşime geçin.**
+4. **Overly Uygulamasını yükleyin.**
+5. **Tetikleyici görselleri uygulamaya okutun.**
 
 ---
 
